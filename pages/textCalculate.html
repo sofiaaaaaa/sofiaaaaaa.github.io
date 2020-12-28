@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>Word Calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-cloud w3-margin-right"></i>Word Calculator</a>
+</div>
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1500px;">
+  <img class="w3-image" src="/images/textCalculateImage.jpg" alt="The Hotel" style="min-width:1000px;" width="1500" height="800">
+  <div class="w3-display-topmiddle w3-padding w3-col l10 m8">
+    <div class="w3-container w3-red">
+      <h5 class="w3-half w3-margin-bottom"><i class="fa fa-cloud w3-margin-right"></i>글을 입력하시면 총 글자수를 세어드립니다.</h5>
+      <h5 class="w3-half w3-margin-bottom">총 <span id="wordCount">0</span> 글자</h5>
+    </div>
+    <div class="w3-container w3-white w3-padding-16" style="opacity: 0.4;">
+      <!-- <form action="/action_page.php" target="_blank"> -->
+        <div class="w3-row-padding" style="margin:0 -16px;">
+          <!-- <button class="w3-button w3-red" type="submit"><i class="fa fa-calculator w3-margin-right"></i> Calculate!</button> -->
+          <div class="w3-margin-bottom">
+            <textarea class="w3-input w3-border" oninput="SuperDuperFunction(this);"
+            name="textArea" id="textArea" cols="80" rows="30"></textarea>
+          </div>
+        </div>
+        </div>
+      <!-- </form> -->
+    </div>
+  </div>
+</header>
+<!-- Footer -->
+<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+function SuperDuperFunction(o) {
+  console.log("change", o.value, o.value.length);
+  var len = o.value.length;
+  var str = len.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+  document.getElementById("wordCount").innerHTML = str;
+
+
+}
+</script>
+</body>
+</html>
