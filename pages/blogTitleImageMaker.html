@@ -37,52 +37,53 @@
       글제목 <input type="text" id="title" style="height:30px;" class="w3-input w3-border" oninput="changeTitle(this);" />
       <input type="checkbox" onclick="changeTextColor3()"> <span style="font-size:small">글씨색 반전</span>
     </div>
-    <div class="w3-row w3-margin flex-container" style="padding-top:30px">
-      <div style="background-color: none; border:1px solid gray;" onclick="clickPalette(this)"> 투명 </div>
-      <div style="background-color: #fff2df;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #d9ad7c;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #a2836e;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #674d3c;" onclick="clickPalette(this)" ></div>
-
-      <div style="background-color: #cfe0e8;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #b7d7e8;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #87bdd8;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #daebe8;" onclick="clickPalette(this)" ></div>
-
-      <div style="background-color: #f9d5e5;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #eeac99;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #e06377;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #c83349;" onclick="clickPalette(this)" ></div>
-
-
-      <div style="background-color: #588c7e;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #f2e394;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #f2ae72;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #d96459;" onclick="clickPalette(this)" ></div>
-
-      <div style="background-color: #96ceb4;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #ffeead;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #ffcc5c;" onclick="clickPalette(this)" ></div>
-      <div style="background-color: #ff6f69;" onclick="clickPalette(this)" ></div>
-    </div>
-
   </header>
-  <div class="w3-border w3-padding w3-margin w3-round-large" id="card" style="max-width:500px;">
+
+  <!-- Card image -->
+  <div class="w3-border w3-padding w3-margin w3-round-large" id="card" style="width:500px;height:500px;">
     <div class="w3-display-container">
-      <img class="w3-round-large" src="https://source.unsplash.com/random/500x250" alt="Lights" style="width:100%;padding-top:1%">
-      <div class="w3-xlarge w3-display-bottomright" style="padding-right:10px">
-        <span id="photoTitle" class="w3-text-white" style="font-size:70%">멋드러진 말</span>
+      <img class="w3-round-large" src="https://source.unsplash.com/random/800x630" alt="Lights" style="width:100%;padding-top:1%">
+      <div class="w3-xlarge w3-display-bottomright" style="padding-right:10px;padding-bottom:10px">
+        <span id="photoTitle" class="w3-text-white" style="font-size:70%;">멋드러진 말</span>
       </div>
     </div>
     <div class="w3-row">
       <div class="w3-center w3-margin-bottom w3-text-dark-grey">
-        <p id="subTitleText" style="font-size:90%">소주제</p>
-        <h5 id="titleText">글제목</h5>
+        <p id="subTitleText" style="font-size:95%;">소주제</p>
+        <h3 id="titleText">글제목</h3>
       </div>
     </div>
   </div>
-  <div class=" w3-margin" style="max-width:600px;padding:1%;"></div>
 
+  <div class=" w3-margin" style="max-width:600px;padding:1%;"></div>
+  <div class="w3-row w3-margin flex-container" style="padding-top:30px">
+    <div style="background-color: none; border:1px solid gray;" onclick="clickPalette(this)"> 투명 </div>
+    <div style="background-color: #fff2df;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #d9ad7c;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #a2836e;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #674d3c;" onclick="clickPalette(this)" ></div>
+
+    <div style="background-color: #cfe0e8;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #b7d7e8;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #87bdd8;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #daebe8;" onclick="clickPalette(this)" ></div>
+
+    <div style="background-color: #f9d5e5;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #eeac99;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #e06377;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #c83349;" onclick="clickPalette(this)" ></div>
+
+
+    <div style="background-color: #588c7e;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #f2e394;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #f2ae72;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #d96459;" onclick="clickPalette(this)" ></div>
+
+    <div style="background-color: #96ceb4;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #ffeead;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #ffcc5c;" onclick="clickPalette(this)" ></div>
+    <div style="background-color: #ff6f69;" onclick="clickPalette(this)" ></div>
+  </div>
 </div>
 <!-- Footer -->
 <footer class="w3-padding-32 w3-black w3-center w3-margin-top">
